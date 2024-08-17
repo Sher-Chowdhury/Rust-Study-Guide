@@ -15,9 +15,22 @@ After the install, you should end up with to cli commands, they are `cargo` and 
 Here's how to create a new rust project
 
 ```bash
-cargo new myRustApp
+$ cargo new my_rust_app
+
+    Creating binary (application) `my_rust_app` package
+note: see more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 ```
 
+This created the following structure:
+
+```bash
+$ tree my_rust_app 
+my_rust_app
+├── Cargo.toml
+└── src
+    └── main.rs
+
+```
 
 Hello world example:
 
