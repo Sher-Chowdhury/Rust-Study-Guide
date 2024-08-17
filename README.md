@@ -1,6 +1,24 @@
 # Rust-Study-Guide
 
 
+## Install rust
+
+Run the curl command in - https://www.rust-lang.org/tools/install
+
+After the install, you should end up with to cli commands, they are `cargo` and `rustc`
+
+`cargo` is the main tool you'll be using most often, whereas `rustc` is less used, but when it is used, it's used for compiling. 
+
+
+## Initialize a new Rust projct. 
+
+Here's how to create a new rust project
+
+```bash
+cargo new myRustApp
+```
+
+
 Hello world example:
 
 ```rust
