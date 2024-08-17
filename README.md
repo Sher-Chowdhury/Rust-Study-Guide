@@ -32,6 +32,13 @@ my_rust_app
 
 ```
 
+
+## Intall vs code extension
+
+- `rust-analyzer` - the official rust extension
+
+
+## Hello world example
 Hello world example:
 
 ```rust
