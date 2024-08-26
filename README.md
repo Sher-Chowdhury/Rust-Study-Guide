@@ -32,10 +32,13 @@ my_rust_app
 
 ```
 
+Note: if you want to use vscode play/debug buttons, then you need to open up vscode in the directory that contains the `Cargo.toml` file 
+
 
 ## Intall vs code extension
 
 - `rust-analyzer` - the official rust extension
+- `CodeLLDB` - needed for runnning rust code in debug mode. - https://code.visualstudio.com/docs/languages/rust#_install-debugging-support
 
 
 ## Hello world example
@@ -79,7 +82,7 @@ fn main() {
 
 ```
 
-`i32` means it's the variable data type is an integer. Like golang, rust can work out the data type for you. Which means you can simply the above to:
+`i32` means it's the variable data type is an integer. Like golang, rust can work out the data type for you. Which means you can simply change the above to:
 
 ```rust
 use std;
@@ -151,3 +154,51 @@ the `->` is just rust syntax which is used to show what gets return, which in th
 
 The return line can be simplified to `return n1 + n2`, or even just `n1 + n2`
 
+
+
+## Crates
+
+In a rust project, you can have:
+
+- up to one library create, and
+- as many binary crates as you like. 
+
+The `main.rs` file is the rust project's root binary crate. 
+
+
+## Variables
+
+All variable names must be in snake case format. 
+
+In Rust, variables are immutable by default, i.e. they are unchangeable. Therefore, you have to use the `mut` key word to say that a variable is mutable.
+
+E.g. this is an immutable variable:
+
+```
+let my_number = 1;
+```
+
+Therefore you can't do:
+
+```rust
+my_number = 2;
+```
+
+However you can override (aka shadow) a variable:
+
+```rust
+let my_number = 2;
+```
+
+
+Whereas here's how to define a mutable variable
+
+```rust
+let my_next_number = 2;
+```
+
+Here's how do define a constant:
+
+```rust
+const my_lucky_number: i32 = 7;
+```

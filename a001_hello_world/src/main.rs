@@ -3,5 +3,5 @@ fn main() {
 
     let my_string = String::from("Hi there");
 
-    println!(my_string);
+    println!("{}", my_string);
 }
