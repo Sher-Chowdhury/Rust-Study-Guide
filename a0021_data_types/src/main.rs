@@ -53,8 +53,14 @@ fn main() {
     println!("The value of salary is: {}",salary);
 
 
+    // This approave is useful if you know the first value is no longer needed. e.g.
+    let name: &str = "Peter";
+    // len() outputs variable of the type "usize" so convert that here. 
+    let name: i32 = name.len() as i32;
+    println!("name changed to integer : {}",name);
 
-    // alternatively you can use mutable variables
+
+    // An alternative to using overriding is that you can use mutable variables
 
     let mut salary1: f64 = 1000.00;
     println!("Old salary is: {}",salary1);
@@ -63,6 +69,10 @@ fn main() {
     println!("The value of salary is: {}",salary1);
 
 
+
+    // There are 2 types of string data:
+    // String Literal(&str)
+    // String Object(String)
 
 
 

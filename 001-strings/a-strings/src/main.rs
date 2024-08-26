@@ -1,3 +1,5 @@
+use a_strings::get_alias;
+
 fn main() {
 
 /*
@@ -47,6 +49,17 @@ fn main() {
     let content_string: String = String::from("TutorialsPoint");
     println!("length is {}",content_string.len());
 
+
+    let alias_name: String = get_alias("Superman");
+    println!("alias name is {}",alias_name);
+
+
+    let alias_name1: String = get_alias("Batman");
+    println!("alias name is {}",alias_name1);
+
+
+    let alias_name1: String = get_alias("Spiderman");
+    println!("alias name is {}",alias_name1);
 
 
 }

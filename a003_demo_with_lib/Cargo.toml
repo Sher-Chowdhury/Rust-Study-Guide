@@ -1,5 +1,5 @@
 [package]
-name = "a_strings"
+name = "a003_demo_with_lib"
 version = "0.1.0"
 edition = "2021"
 
