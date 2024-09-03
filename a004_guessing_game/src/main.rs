@@ -1,7 +1,6 @@
 use std::io;
-use rand::Rng;
 use std::cmp::Ordering;
-
+use rand::Rng;
 
 
 fn main() {
