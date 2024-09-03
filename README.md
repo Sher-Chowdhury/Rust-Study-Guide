@@ -1,6 +1,11 @@
 # Rust-Study-Guide
 
 
+## Recommended book
+
+https://doc.rust-lang.org/stable/book/
+
+
 ## Install rust
 
 Run the curl command in - https://www.rust-lang.org/tools/install
