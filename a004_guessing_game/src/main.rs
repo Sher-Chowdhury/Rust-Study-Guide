@@ -20,10 +20,12 @@ fn main() {
         .expect("Failed to read line");
 
 
+    
+    // we effectively overridden the guess variable into a integer data type. 
     let guess: u32 = guess.trim().parse().expect("Please type a number!");
 
 
-        println!("You guessed: {guess}");
+    println!("You guessed: {guess}");
 
     match guess.cmp(&secret_number) {
         Ordering::Less => println!("Too small!"),
