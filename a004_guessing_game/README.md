@@ -17,3 +17,5 @@ cargo doc --open
 ```
 
 Here the docs gives more info about the `thread_rng()` function
+
+
