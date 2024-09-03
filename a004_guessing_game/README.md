@@ -7,3 +7,13 @@ cd a004_guessing_game
 cargo check
 cargo run 
 ```
+
+add a new package (this just updates the cargo.toml file):
+
+
+```
+cargo add rand
+cargo doc --open 
+```
+
+Here the docs gives more info about the `thread_rng()` function
