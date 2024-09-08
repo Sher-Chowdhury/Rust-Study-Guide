@@ -1,0 +1,6 @@
+[package]
+name = "a001_book_examples"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
