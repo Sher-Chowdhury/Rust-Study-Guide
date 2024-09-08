@@ -188,13 +188,14 @@
 //         sign_in_count: 52 
 //     };
 
-//     user1.username = String::from("Thomas"); // this won't work, unless you make the entire struct variable mutable
+//     user1.username = String::from("Thomas"); // This should now work, since user1 is mutable. 
 
 //     println!("{} {} {} {}", {user1.employed},{user1.username},{user1.email},{user1.sign_in_count})
 // }
 
 
-// // Page 94
+// Page 95
+// here we're adding an "outer attribute" called "Debug"
 #[derive(Debug)]
 struct User {
     employed: bool,
@@ -208,10 +209,18 @@ fn main() {
         employed: true, 
         username: String::from("Neo"), 
         email: String::from("neo@matrix.com"),  
-        sign_in_count: 52 
+        // dbg!() accepts any expressions prints the result to standard error console.
+        // it also returns the value to, so makes it a handy technique for debugging.  
+        sign_in_count: dbg!(5 * 100) 
     };
 
-    user1.username = String::from("Thomas"); // this won't work, unless you make the entire struct variable mutable
+    // The ":#?" tells println to use the outformat called "Debug", rather than the default 
+    // output format, "std::fmt::Display"
+    println!("{:#?}", user1);
 
-    println!("{:#?}", user1)
+    // the following get's printed to the standard error console,
+    // whereas println! prints to the standard output
+    dbg!(&user1);
 }
+
+
